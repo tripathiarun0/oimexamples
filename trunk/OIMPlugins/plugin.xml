@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oimplugins>
+    <plugins pluginpoint="oracle.iam.identity.usermgmt.api.UserNamePolicy">
+        <plugin pluginclass="org.oimplugins.plugins.FirstInitialLastNamePolicy" version="1.0" name="Custom UserNamePolicy"/>
+    </plugins>
+    
+    <plugins pluginpoint="oracle.iam.platform.kernel.spi.EventHandler">
+        <plugin pluginclass="org.oimplugins.plugins.SetFieldsPreProcessor" version="1.0" name="CustomSetFieldsPreProcessor"/>
+    </plugins>
+</oimplugins>
