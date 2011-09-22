@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventhandlers>
+<action-handler class="org.oimplugins.plugins.SetFieldsPreProcessor"
+   entity-type="User" operation="CREATE" name="CustomSetFieldsPreProcessor" stage="preprocess" order="1234" sync="TRUE"/>
+</eventhandlers>
