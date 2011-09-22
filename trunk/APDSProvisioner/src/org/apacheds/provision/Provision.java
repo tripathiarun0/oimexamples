@@ -9,7 +9,7 @@ import com.thortech.xl.dataaccess.tcDataBase;
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.commons.lang.StringUtils;
-import org.fredforester.exceptions.OIMHelperException;
+import org.oimwrapper.exceptions.OIMHelperException;
 import org.ldaphelper.ldapclient.LazyLdapBean;
 import org.ldaphelper.ldapclient.exceptions.LDAPHelperException;
 

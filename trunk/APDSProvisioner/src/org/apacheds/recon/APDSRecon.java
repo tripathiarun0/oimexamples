@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 import oracle.iam.reconciliation.api.ReconOperationsService;
 import org.apache.commons.lang.StringUtils;
-import org.fredforester.exceptions.OIMHelperException;
+import org.oimwrapper.exceptions.OIMHelperException;
 import org.apacheds.ldap.APDSProperties;
 import org.ldaphelper.ldapclient.LazyLdapBean;
 import org.ldaphelper.ldapclient.exceptions.LDAPHelperException;

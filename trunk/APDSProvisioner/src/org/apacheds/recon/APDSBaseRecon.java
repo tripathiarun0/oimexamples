@@ -7,12 +7,12 @@ package org.apacheds.recon;
 
 import java.util.Map;
 import org.apache.log4j.Logger;
-import org.fredforester.exceptions.OIMHelperException;
+import org.oimwrapper.exceptions.OIMHelperException;
 import org.apacheds.ldap.APDSContactDAO;
 import org.ldaphelper.ldapclient.exceptions.LDAPHelperException;
-import org.fredforester.oimhelper.OIMHelperClient;
-import org.fredforester.oimhelper.OIMProperties;
-import org.fredforester.oimhelper.OIMlookupUtilities;
+import org.oimwrapper.api.OIMHelperClient;
+import org.oimwrapper.api.OIMProperties;
+import org.oimwrapper.api.OIMlookupUtilities;
 
 /**
  *
