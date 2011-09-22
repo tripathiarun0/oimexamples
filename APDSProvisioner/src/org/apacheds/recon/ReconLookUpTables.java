@@ -8,7 +8,7 @@ package org.apacheds.recon;
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.commons.lang.StringUtils;
-import org.fredforester.exceptions.OIMHelperException;
+import org.oimwrapper.exceptions.OIMHelperException;
 import org.apacheds.ldap.APDSProperties;
 import org.ldaphelper.ldapclient.LazyLdapBean;
 import org.springframework.ldap.control.PagedResult;

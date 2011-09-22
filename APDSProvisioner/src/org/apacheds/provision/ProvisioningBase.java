@@ -17,13 +17,13 @@ import org.apache.commons.beanutils.BasicDynaClass;
 import org.apache.commons.beanutils.DynaClass;
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
-import org.fredforester.exceptions.OIMHelperException;
+import org.oimwrapper.exceptions.OIMHelperException;
 import org.apacheds.ldap.APDSContactDAO;
 import org.apacheds.ldap.APDSProperties;
 import org.ldaphelper.ldapclient.LazyLdapBean;
 import org.ldaphelper.ldapclient.exceptions.LDAPHelperException;
-import org.fredforester.oimhelper.OIMForms;
-import org.fredforester.oimhelper.OIMProperties;
+import org.oimwrapper.api.OIMForms;
+import org.oimwrapper.api.OIMProperties;
 
 /**
  *
