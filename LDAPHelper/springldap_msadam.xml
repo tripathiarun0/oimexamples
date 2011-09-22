@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="contextSource" class="org.springframework.ldap.core.support.LdapContextSource">
+            <property name="url" value="ldap://10.10.1.164:389" />
+            <property name="base" value="CN=AdamDev,DC=amerindia,DC=dev" />
+            <property name="userDn" value="CN=adamadmin,CN=Users,CN=AdamDev,DC=amerindia,DC=dev" />
+            <property name="password" value="ZZzz9191YYyy" />
+            <property name="pooled" value="true" />
+	</bean>
+	<bean id="ldapTemplate" class="org.springframework.ldap.core.LdapTemplate">
+            <constructor-arg ref="contextSource" />
+	</bean>
+	<bean id="ldapContact" class="org.ldaphelper.ldapclient.MSAdamContactDAO">
+            <property name="ldapTemplate" ref="ldapTemplate" />
+            <property name="base" value="CN=AdamDev,DC=amerindia,DC=dev" />
+            <property name="groupSearch" value="(&amp;(objectClass=group)(member={0}))" />
+            <property name="userSearch" value="(objectClass=person)" />
+            <property name="objectClassPerson" value="person" />
+            <property name="objectClassForOrgPerson" value="organizationalPerson" />
+            <property name="objectClassForUser" value="user" />
+            <property name="userOu" value="cn=Users" />
+            <property name="groupAttribute" value="member" />
+            <property name="groupBase" value="cn=Roles" />
+            <property name="defaultUserGroup" value="Readers" />
+	</bean>
+
+        <!-- Paging beans -->
+
+        <bean id="pagingAttributes" class="org.ldaphelper.ldapclient.PagingAttributes">
+	    <property name="base" value="" />
+            <property name="groupSearch" value="(&amp;(objectClass=group)(cn=*))" />
+            <property name="userSearch" value="(&amp;(objectClass=person)(uid=*))" />
+	</bean>
+
+        <bean id="springPager" class="org.ldaphelper.ldapclient.LDAPPagedResults">
+            <property name="ldapTemplate" ref="ldapTemplate" />
+	    <property name="base" value="" />
+            <property name="groupSearch" value="(&amp;(objectClass=group)(cn=*))" />
+            <property name="userSearch" value="(&amp;(objectClass=person)(uid=*))" />
+	</bean>
+
+        <!-- use this template if not using the pooled option
+        <bean id="poolingSource" class="org.springframework.ldap.pool.factory.MutablePoolingContextSource">
+            <property name="contextSource" ref="contextSource" />
+
+	</bean>
+        <bean id="poolingTemplate" class="org.springframework.ldap.core.LdapTemplate">
+	    <constructor-arg ref="poolingSource" />
+	</bean>
+        -->
+
+        
+</beans>
