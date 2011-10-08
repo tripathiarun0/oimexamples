@@ -1,0 +1,15 @@
+Name,Description,DisplayName,Action
+ALUMNI,Alumni,Advancement Display Name
+APPLICANT,Applicant,Applicant Student
+APPACCEPT,ApplicantAccept,ApplicantAccept Student
+BANNERINB,BannerINB,BannerINB General
+BANNEROUTB,BANNEROUTB,BANNEROUTB General
+BASICPERSON,BasicPerson,Banner Identity Gateway
+DEVELOPMENTOFFICER,DevelopmentOfficer,DevelopmentOfficer Advancement
+FACULTY,Faculty,Faculty Student
+FINANCE,Finance,Finance
+FRIENDS,Friends,Friends Advancement
+INTACCEPT,InstitutionAccept,InstitutionAccept Student
+PROSPECT,Prospect,Prospect Student
+EMPLOYEE,Staff,Human Resources
+STUDENT,Student,Student

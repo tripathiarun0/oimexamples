@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UDCIdentity xmlns="urn:sungardhe:enterprise:domain:identity:1.0"
+	xmlns:xdb="http://xmlns.oracle.com/xdb" xmlns:rco="urn:sungardhe:enterprise:resources:common:1.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:sungardhe:enterprise:domain:identity:1.0
+identity_domain.xsd"
+	PUBLISHER_NAME="BANNER" action="ADD">
+	<UDCIdentifier>1199F5545DEE329BE0440003BA33B443</UDCIdentifier>
+	<PersonIdentity>
+		<PersonName>
+			<GivenName>Eleven</GivenName>
+			<FormattedName>Eleven Noel Woods</FormattedName>
+			<PreferredGivenName>Fred</PreferredGivenName>
+			<MiddleName>Eleven</MiddleName>
+			<FamilyName>Woods</FamilyName>
+			<Affix type="formOfAddress">Mr.</Affix>
+			<Affix type="qualification">Sr.</Affix>
+		</PersonName>
+	</PersonIdentity>
+	<EmailAddress>fredEleven@metu.edu</EmailAddress>
+	<PrimaryAddress>
+		<PostalCode>59640</PostalCode>
+		<Region>PA</Region>
+		<Municipality>Somewhere</Municipality>
+		<AddressLine>22 Underwood Lane</AddressLine>
+	</PrimaryAddress>
+	<CampusAddress>
+		<PostalCode>59620</PostalCode>
+		<Region>MT</Region>
+		<Municipality>Helena</Municipality>
+		<AddressLine>PO Box 200113</AddressLine>
+	</CampusAddress>
+	<CampusPhone>
+		<AreaCityCode>620</AreaCityCode>
+		<SubscriberNumber>7609500</SubscriberNumber>
+		<Extension>113</Extension>
+	</CampusPhone>
+	<MobilePhone>
+		<AreaCityCode>620</AreaCityCode>
+		<SubscriberNumber>3332384</SubscriberNumber>
+	</MobilePhone>
+	<Fax>
+		<AreaCityCode>620</AreaCityCode>
+		<SubscriberNumber>7609551</SubscriberNumber>
+	</Fax>
+	<InstitutionRoles>
+		<institutionrole>
+			<role>BANNERINB</role>
+		</institutionrole>
+                <institutionrole>
+			<role>BANNEROUTB</role>
+		</institutionrole>
+	</InstitutionRoles>
+</UDCIdentity>
