@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UDCIdentity xmlns="urn:sungardhe:enterprise:domain:identity:1.0"
+	xmlns:xdb="http://xmlns.oracle.com/xdb" xmlns:rco="urn:sungardhe:enterprise:resources:common:1.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:sungardhe:enterprise:domain:identity:1.0
+identity_domain.xsd"
+	PUBLISHER_NAME="BANNER" action="DELETE">
+<UDCIdentifier></UDCIdentifier>
+</UDCIdentity>
