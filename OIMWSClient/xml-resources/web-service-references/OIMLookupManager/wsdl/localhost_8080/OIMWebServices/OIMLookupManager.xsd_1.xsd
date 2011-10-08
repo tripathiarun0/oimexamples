@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://interfaces.services.oimwebservices.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://interfaces.services.oimwebservices.org/">
+
+<xs:element name="OIMHelperException" type="tns:OIMHelperException" />
+
+<xs:element name="createClientSession" type="tns:createClientSession" />
+
+<xs:element name="createClientSessionResponse" type="tns:createClientSessionResponse" />
+
+<xs:element name="getLookupValues" type="tns:getLookupValues" />
+
+<xs:element name="getLookupValuesResponse" type="tns:getLookupValuesResponse" />
+
+<xs:complexType name="createClientSession">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="createClientSessionResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="OIMHelperException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLookupValues">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLookupValuesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mapEntry" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mapEntry">
+<xs:complexContent>
+<xs:extension base="tns:baseObject">
+<xs:sequence>
+<xs:element name="key" type="xs:string" minOccurs="0" />
+<xs:element name="value" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="baseObject" abstract="true">
+<xs:sequence />
+</xs:complexType>
+</xs:schema>
