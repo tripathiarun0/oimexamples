@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/OIMWebServices/OIMUserManager?wsdl" uri="xml-resources/web-service-references/OIMUserManager/wsdl/localhost_8080/OIMWebServices/OIMUserManager.wsdl"/>
+    <system systemId="http://localhost:8080/OIMWebServices/OIMUserManager?wsdl=1" uri="xml-resources/web-service-references/OIMUserManager/wsdl/localhost_8080/OIMWebServices/OIMUserManager.wsdl_1.wsdl"/>
+    <system systemId="http://localhost:8080/OIMWebServices/OIMUserManager?xsd=1" uri="xml-resources/web-service-references/OIMUserManager/wsdl/localhost_8080/OIMWebServices/OIMUserManager.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/OIMWebServices/OIMLookupManager?wsdl" uri="xml-resources/web-service-references/OIMLookupManager/wsdl/localhost_8080/OIMWebServices/OIMLookupManager.wsdl"/>
+    <system systemId="http://localhost:8080/OIMWebServices/OIMLookupManager?wsdl=1" uri="xml-resources/web-service-references/OIMLookupManager/wsdl/localhost_8080/OIMWebServices/OIMLookupManager.wsdl_1.wsdl"/>
+    <system systemId="http://localhost:8080/OIMWebServices/OIMLookupManager?xsd=1" uri="xml-resources/web-service-references/OIMLookupManager/wsdl/localhost_8080/OIMWebServices/OIMLookupManager.xsd_1.xsd"/>
+</catalog>

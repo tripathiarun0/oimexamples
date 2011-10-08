@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://interfaces.services.oimwebservices.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://interfaces.services.oimwebservices.org/">
+
+<xs:element name="OIMHelperException" type="tns:OIMHelperException" />
+
+<xs:element name="createClientSession" type="tns:createClientSession" />
+
+<xs:element name="createClientSessionResponse" type="tns:createClientSessionResponse" />
+
+<xs:element name="getUser" type="tns:getUser" />
+
+<xs:element name="getUserByKey" type="tns:getUserByKey" />
+
+<xs:element name="getUserByKeyResponse" type="tns:getUserByKeyResponse" />
+
+<xs:element name="getUserResponse" type="tns:getUserResponse" />
+
+<xs:element name="getUserRoles" type="tns:getUserRoles" />
+
+<xs:element name="getUserRolesByKey" type="tns:getUserRolesByKey" />
+
+<xs:element name="getUserRolesByKeyResponse" type="tns:getUserRolesByKeyResponse" />
+
+<xs:element name="getUserRolesResponse" type="tns:getUserRolesResponse" />
+
+<xs:complexType name="getUserByKey">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserByKeyResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:oimUser" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="oimUser">
+<xs:complexContent>
+<xs:extension base="tns:baseObject">
+<xs:sequence>
+<xs:element name="email" type="xs:string" minOccurs="0" />
+<xs:element name="firstName" type="xs:string" minOccurs="0" />
+<xs:element name="lastName" type="xs:string" minOccurs="0" />
+<xs:element name="userId" type="xs:string" minOccurs="0" />
+<xs:element name="userKey" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="baseObject" abstract="true">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getUserRoles">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserRolesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createClientSession">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="createClientSessionResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="OIMHelperException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUser">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:oimUser" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserRolesByKey">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserRolesByKeyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
