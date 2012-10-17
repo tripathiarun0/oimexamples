@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://10.10.1.168:14000/spml-xsd/SPMLService?WSDL" uri="xml-resources/web-service-references/SPMLService/wsdl/10.10.1.168_14000/spml-xsd/SPMLService.wsdl"/>
+    <system systemId="http://10.10.1.168:14000/spml-xsd/SPMLService?XSD=pstc_spmlv2_core.xsd" uri="xml-resources/web-service-references/SPMLService/wsdl/10.10.1.168_14000/spml-xsd/SPMLService.XSD_pstc_spmlv2_core.xsd"/>
+    <system systemId="http://10.10.1.168:14000/spml-xsd/SPMLService?XSD=pstc_spmlv2_async.xsd" uri="xml-resources/web-service-references/SPMLService/wsdl/10.10.1.168_14000/spml-xsd/SPMLService.XSD_pstc_spmlv2_async.xsd"/>
+    <system systemId="http://10.10.1.168:14000/spml-xsd/SPMLService?XSD=pstc_spmlv2_password.xsd" uri="xml-resources/web-service-references/SPMLService/wsdl/10.10.1.168_14000/spml-xsd/SPMLService.XSD_pstc_spmlv2_password.xsd"/>
+    <system systemId="http://10.10.1.168:14000/spml-xsd/SPMLService?XSD=pstc_spmlv2_suspend.xsd" uri="xml-resources/web-service-references/SPMLService/wsdl/10.10.1.168_14000/spml-xsd/SPMLService.XSD_pstc_spmlv2_suspend.xsd"/>
+    <system systemId="http://10.10.1.168:14000/spml-xsd/SPMLService?XSD=pstc_spmlv2_reference.xsd" uri="xml-resources/web-service-references/SPMLService/wsdl/10.10.1.168_14000/spml-xsd/SPMLService.XSD_pstc_spmlv2_reference.xsd"/>
+    <system systemId="http://10.10.1.168:14000/spml-xsd/SPMLService?XSD=oracle_common_operationdata.xsd" uri="xml-resources/web-service-references/SPMLService/wsdl/10.10.1.168_14000/spml-xsd/SPMLService.XSD_oracle_common_operationdata.xsd"/>
+    <system systemId="http://10.10.1.168:14000/spml-xsd/SPMLService?XSD=oracle_spmlv2_username.xsd" uri="xml-resources/web-service-references/SPMLService/wsdl/10.10.1.168_14000/spml-xsd/SPMLService.XSD_oracle_spmlv2_username.xsd"/>
+    <system systemId="http://10.10.1.168:14000/spml-xsd/SPMLService?XSD=pstc_spmlv2_header.xsd" uri="xml-resources/web-service-references/SPMLService/wsdl/10.10.1.168_14000/spml-xsd/SPMLService.XSD_pstc_spmlv2_header.xsd"/>
+    <system systemId="http://10.10.1.168:14000/spml-xsd/SPMLService?XSD=oracle_common_pso.xsd" uri="xml-resources/web-service-references/SPMLService/wsdl/10.10.1.168_14000/spml-xsd/SPMLService.XSD_oracle_common_pso.xsd"/>
+</catalog>
